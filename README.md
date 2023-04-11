@@ -36,3 +36,14 @@ export PATH=${PATH}:${QEMU_HOME}/bin
 ```shell
 $ qemu-system-riscv64 --version
 ```
+
+## Run xv6 on QEMU
+* To enter the xv6 shell on QEMU
+```shell
+$ make qemu
+```
+
+* To escape from the QEMU, open another terminal and run:
+```shell
+$ killall qemu-system-riscv64
+```
